@@ -1,0 +1,60 @@
+{
+  "input": {
+    "file": "data/penilaian_ahli.xlsx",
+    "sheet": "Sheet1",
+
+    "columns": {
+      "program": "Program",
+      "expert": "Ahli",
+      "indicator_a": "Indikator 1",
+      "relation": "Relasi",
+      "indicator_b": "Indikator 2",
+      "score": "Skor"
+    }
+  },
+
+  "scale": {
+    "min": 1,
+    "max": 9
+  },
+
+  "relation_symbols": {
+    ">": "A_B",
+    "=": "EQUAL",
+    "<": "B_A"
+  },
+
+  "aggregation": {
+    "method": "geometric_mean"
+  },
+
+  "priority": {
+    "method": "eigenvector"
+  },
+
+  "consistency": {
+    "threshold": 0.1,
+    "random_index": {
+      "1": 0.00,
+      "2": 0.00,
+      "3": 0.58,
+      "4": 0.90,
+      "5": 1.12,
+      "6": 1.24,
+      "7": 1.32,
+      "8": 1.41,
+      "9": 1.45,
+      "10": 1.49
+    }
+  },
+
+  "agreement": {
+    "method": "kendall_w",
+    "alpha": 0.05
+  },
+
+  "output": {
+    "file": "config/ahp_weights.json",
+    "round": 6
+  }
+}

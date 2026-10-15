@@ -1,0 +1,92 @@
+{
+  "variables": {
+
+    "luas_perkapita": {
+      "column": ["luas_lantai","jumlah_anggota_keluarga"],
+      "operation": "divide",
+      "padat": {"lt":7.2}
+    },
+
+    "atap": {
+      "column": "jenis_atap_terluas",
+      "tidak_layak": [4,5,7,8]
+    },
+
+    "dinding": {
+      "column": "jenis_dinding_terluas",
+      "tidak_layak": [4,6,7]
+    },
+
+    "lantai": {
+      "column": "jenis_lantai_terluas",
+      "tidak_layak": [7,8,9]
+    },
+
+    "air": {
+      "column": "sumber_air_minum_utama",
+      "tidak_layak": [6,8,9,11]
+    },
+
+    "sanitasi": {
+
+      "fasilitas": {
+        "column": "fasilitas_bab",
+        "tidak_layak": [4,5,6]
+      },
+
+      "kloset": {
+        "column": "jenis_kloset",
+        "tidak_layak": [2,3,4]
+      },
+
+      "pembuangan": {
+        "column": "pembuangan_akhir_tinja",
+        "tidak_layak": [3,5,6]
+      }
+
+    }
+
+  },
+
+  "features": {
+
+    "hunian_padat": {
+      "conditions": [
+        ["luas_perkapita.padat"]
+      ]
+    },
+
+    "atap_tidak_layak": {
+      "conditions": [
+        ["atap.tidak_layak"]
+      ]
+    },
+
+    "dinding_tidak_layak": {
+      "conditions": [
+        ["dinding.tidak_layak"]
+      ]
+    },
+
+    "lantai_tidak_layak": {
+      "conditions": [
+        ["lantai.tidak_layak"]
+      ]
+    },
+
+    "air_tidak_layak": {
+      "conditions": [
+        ["air.tidak_layak"]
+      ]
+    },
+
+    "sanitasi_tidak_layak": {
+      "conditions": [
+        ["sanitasi.fasilitas.tidak_layak"],
+        ["sanitasi.kloset.tidak_layak"],
+        ["sanitasi.pembuangan.tidak_layak"]
+      ]
+    }
+
+  }
+}

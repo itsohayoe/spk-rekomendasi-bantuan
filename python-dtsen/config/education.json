@@ -1,0 +1,51 @@
+{
+  "variables": {
+
+    "umur": {
+      "column": "umur",
+      "sekolah": {"between": [7,18]},
+      "ijazah": {"between": [19,30]}
+    },
+
+    "partisipasi": {
+      "column": "partisipasi_sekolah",
+      "belum_sekolah": [1],
+      "masih_sekolah": [2],
+      "tidak_sekolah": [3]
+    },
+
+    "ijazah": {
+      "column": "ijazah_tertinggi_yang_dimiliki",
+      "rendah": [1,2,3,4,5,6,7,8,9,10,23]
+    }
+
+  },
+
+  "features": {
+
+    "ada_anak_sekolah": {
+      "conditions": [
+        [["umur.sekolah"], ["partisipasi.masih_sekolah"]]
+      ]
+    },
+
+    "belum_sekolah": {
+      "conditions": [
+        [["umur.sekolah"], ["partisipasi.belum_sekolah"]]
+      ]
+    },
+
+    "putus_sekolah": {
+      "conditions": [
+        [["umur.sekolah"], ["partisipasi.tidak_sekolah"]]
+      ]
+    },
+
+    "ijazah_rendah": {
+      "conditions": [
+        [["umur.ijazah"], ["ijazah.rendah"]]
+      ]
+    }
+
+  }
+}

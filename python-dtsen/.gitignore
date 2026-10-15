@@ -1,0 +1,37 @@
+# Environment dan rahasia
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.Python
+.venv/
+venv/
+ENV/
+
+# Notebook
+.ipynb_checkpoints/
+
+# Editor
+.vscode/
+.idea/
+
+# Log dan file sementara
+*.log
+*.tmp
+*.bak
+
+# Data lokal dan keluaran sensitif
+data/raw/
+data/processed/
+*.backup
+*.dump
+*.bak
+*.sql.gz
+
+# OS
+.DS_Store
+Thumbs.db

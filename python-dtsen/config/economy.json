@@ -1,0 +1,80 @@
+{
+  "variables": {
+
+    "bahan_bakar": {
+      "column": "bahan_bakar_utama_memasak",
+      "tidak_layak": [7,8,9,10,11]
+    },
+
+    "penerangan": {
+      "column": "sumber_penerangan_utama",
+      "tidak_layak": {"not_in": [1]}
+    },
+
+    "rumah": {
+      "column": "status_kepemilikan_rumah",
+      "bukan_milik": {"not_in": [1]}
+    },
+
+    "kulkas": {
+      "column": "aset_bergerak_lemari_es",
+      "tidak_punya": [2]
+    },
+
+    "motor": {
+      "column": "aset_bergerak_sepeda_motor",
+      "tidak_punya": [2]
+    },
+
+    "perahu_motor": {
+      "column": "aset_bergerak_kapal_perahu_motor",
+      "tidak_punya": [2]
+    },
+
+    "smartphone": {
+      "column": "aset_bergerak_smartphone",
+      "tidak_punya": [2]
+    }
+
+  },
+
+  "features": {
+
+    "bahan_bakar_tidak_layak": {
+      "conditions": [
+        ["bahan_bakar.tidak_layak"]
+      ]
+    },
+
+    "penerangan_tidak_layak": {
+      "conditions": [
+        ["penerangan.tidak_layak"]
+      ]
+    },
+
+    "rumah_bukan_milik_sendiri": {
+      "conditions": [
+        ["rumah.bukan_milik"]
+      ]
+    },
+
+    "tidak_punya_kulkas": {
+      "conditions": [
+        ["kulkas.tidak_punya"]
+      ]
+    },
+
+    "tidak_punya_motor": {
+      "conditions": [
+        ["motor.tidak_punya","perahu_motor.tidak_punya"]
+      ]
+    },
+
+    "tidak_punya_smartphone": {
+      "conditions": [
+        ["smartphone.tidak_punya"]
+      ]
+    }
+
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "method": "AHP",
+    "aggregation": "geometric_mean",
+    "priority": "eigenvector",
+    "agreement": "kendall_w",
+    "consistency_threshold": 0.1
+  },
+  "summary": [
+    {
+      "Program": "ATENSI",
+      "Jumlah_Indikator": 2,
+      "Jumlah_Ahli": 6,
+      "Lambda_Max": 1.9999999999999998,
+      "CI": 0.0,
+      "CR": 0.0,
+      "Status_CR": "CR tidak dievaluasi (2 indikator)",
+      "Kendall_W": 0.6666666666666666,
+      "Kendall_Chi_Square": 4.0,
+      "Kendall_P_Value": 0.04550026389635857,
+      "Agreement_Level": "Substantial",
+      "Agreement_Signifikan": true
+    },
+    {
+      "Program": "BLT",
+      "Jumlah_Indikator": 5,
+      "Jumlah_Ahli": 6,
+      "Lambda_Max": 5.034118322198976,
+      "CI": 0.008529580549744065,
+      "CR": 0.007615696919414342,
+      "Status_CR": "Konsisten",
+      "Kendall_W": 0.34057971014492755,
+      "Kendall_Chi_Square": 8.173913043478262,
+      "Kendall_P_Value": 0.08541130560035406,
+      "Agreement_Level": "Fair",
+      "Agreement_Signifikan": false
+    },
+    {
+      "Program": "BSPS",
+      "Jumlah_Indikator": 4,
+      "Jumlah_Ahli": 6,
+      "Lambda_Max": 4.0317911078656135,
+      "CI": 0.010597035955204484,
+      "CR": 0.01177448439467165,
+      "Status_CR": "Konsisten",
+      "Kendall_W": 0.36904761904761907,
+      "Kendall_Chi_Square": 6.642857142857143,
+      "Kendall_P_Value": 0.08419566324085444,
+      "Agreement_Level": "Fair",
+      "Agreement_Signifikan": false
+    },
+    {
+      "Program": "PBI JK",
+      "Jumlah_Indikator": 2,
+      "Jumlah_Ahli": 6,
+      "Lambda_Max": 2.0,
+      "CI": 0.0,
+      "CR": 0.0,
+      "Status_CR": "CR tidak dievaluasi (2 indikator)",
+      "Kendall_W": 0.3,
+      "Kendall_Chi_Square": 1.7999999999999998,
+      "Kendall_P_Value": 0.17971249487899604,
+      "Agreement_Level": "Fair",
+      "Agreement_Signifikan": false
+    },
+    {
+      "Program": "PIP",
+      "Jumlah_Indikator": 2,
+      "Jumlah_Ahli": 6,
+      "Lambda_Max": 2.0,
+      "CI": 0.0,
+      "CR": 0.0,
+      "Status_CR": "CR tidak dievaluasi (2 indikator)",
+      "Kendall_W": 0.6666666666666666,
+      "Kendall_Chi_Square": 4.0,
+      "Kendall_P_Value": 0.04550026389635857,
+      "Agreement_Level": "Substantial",
+      "Agreement_Signifikan": true
+    },
+    {
+      "Program": "PKH",
+      "Jumlah_Indikator": 4,
+      "Jumlah_Ahli": 6,
+      "Lambda_Max": 4.043466149652589,
+      "CI": 0.014488716550863145,
+      "CR": 0.016098573945403493,
+      "Status_CR": "Konsisten",
+      "Kendall_W": 0.5112994350282486,
+      "Kendall_Chi_Square": 9.203389830508474,
+      "Kendall_P_Value": 0.026705435920405498,
+      "Agreement_Level": "Moderate",
+      "Agreement_Signifikan": true
+    },
+    {
+      "Program": "SEMBAKO",
+      "Jumlah_Indikator": 3,
+      "Jumlah_Ahli": 6,
+      "Lambda_Max": 3.0320642054507805,
+      "CI": 0.01603210272539024,
+      "CR": 0.027641556423086622,
+      "Status_CR": "Konsisten",
+      "Kendall_W": 0.3611111111111111,
+      "Kendall_Chi_Square": 4.333333333333333,
+      "Kendall_P_Value": 0.11455884399268772,
+      "Agreement_Level": "Fair",
+      "Agreement_Signifikan": false
+    }
+  ],
+  "weights": [
+    {
+      "Program": "ATENSI",
+      "Indikator": "Morbiditas",
+      "Bobot": 0.2603982433248672
+    },
+    {
+      "Program": "ATENSI",
+      "Indikator": "Nutrisi balita",
+      "Bobot": 0.7396017566751328
+    },
+    {
+      "Program": "BLT",
+      "Indikator": "Bahan bakar masak",
+      "Bobot": 0.12145608314137257
+    },
+    {
+      "Program": "BLT",
+      "Indikator": "Kepemilikan aset",
+      "Bobot": 0.15899418932145726
+    },
+    {
+      "Program": "BLT",
+      "Indikator": "Morbiditas",
+      "Bobot": 0.16232314671431478
+    },
+    {
+      "Program": "BLT",
+      "Indikator": "Nutrisi balita",
+      "Bobot": 0.40881353997592956
+    },
+    {
+      "Program": "BLT",
+      "Indikator": "Sumber penerangan",
+      "Bobot": 0.1484130408469257
+    },
+    {
+      "Program": "BSPS",
+      "Indikator": "Air minum",
+      "Bobot": 0.39691185932394474
+    },
+    {
+      "Program": "BSPS",
+      "Indikator": "Kepadatan hunian",
+      "Bobot": 0.12911497424812401
+    },
+    {
+      "Program": "BSPS",
+      "Indikator": "Kondisi hunian",
+      "Bobot": 0.18669921669077152
+    },
+    {
+      "Program": "BSPS",
+      "Indikator": "Sanitasi",
+      "Bobot": 0.28727394973715986
+    },
+    {
+      "Program": "PBI JK",
+      "Indikator": "Morbiditas",
+      "Bobot": 0.29717271808112644
+    },
+    {
+      "Program": "PBI JK",
+      "Indikator": "Nutrisi balita",
+      "Bobot": 0.7028272819188736
+    },
+    {
+      "Program": "PIP",
+      "Indikator": "Lama sekolah",
+      "Bobot": 0.2945006785123176
+    },
+    {
+      "Program": "PIP",
+      "Indikator": "Partisipasi sekolah",
+      "Bobot": 0.7054993214876825
+    },
+    {
+      "Program": "PKH",
+      "Indikator": "Lama sekolah",
+      "Bobot": 0.0937705984274928
+    },
+    {
+      "Program": "PKH",
+      "Indikator": "Morbiditas",
+      "Bobot": 0.2421609761357027
+    },
+    {
+      "Program": "PKH",
+      "Indikator": "Nutrisi balita",
+      "Bobot": 0.376308935960483
+    },
+    {
+      "Program": "PKH",
+      "Indikator": "Partisipasi sekolah",
+      "Bobot": 0.28775948947632163
+    },
+    {
+      "Program": "SEMBAKO",
+      "Indikator": "Bahan bakar masak",
+      "Bobot": 0.44557887581688926
+    },
+    {
+      "Program": "SEMBAKO",
+      "Indikator": "Kepemilikan aset",
+      "Bobot": 0.21512982912700399
+    },
+    {
+      "Program": "SEMBAKO",
+      "Indikator": "Sumber penerangan",
+      "Bobot": 0.3392912950561068
+    }
+  ]
+}

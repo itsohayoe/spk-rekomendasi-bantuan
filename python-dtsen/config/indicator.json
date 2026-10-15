@@ -1,0 +1,78 @@
+{
+  "indicators": {
+
+    "partisipasi_sekolah": {
+      "features": [
+        ["belum_sekolah"],
+        ["putus_sekolah"]
+      ]
+    },
+
+    "lama_sekolah": {
+      "features": [
+        ["ijazah_rendah"]
+      ]
+    },
+
+    "morbiditas": {
+      "features": [
+        ["penyakit_kronis"],
+        ["gangguan_fungsional"]
+      ]
+    },
+
+    "nutrisi_balita": {
+      "features": [
+        ["balita_gizi_buruk"]
+      ]
+    },
+
+    "kepadatan_hunian": {
+      "features": [
+        ["hunian_padat"]
+      ]
+    },
+
+    "kondisi_hunian": {
+      "features": [
+        ["atap_tidak_layak"],
+        ["dinding_tidak_layak"],
+        ["lantai_tidak_layak"]
+      ]
+    },
+
+    "air_minum": {
+      "features": [
+        ["air_tidak_layak"]
+      ]
+    },
+
+    "sanitasi": {
+      "features": [
+        ["sanitasi_tidak_layak"]
+      ]
+    },
+
+    "sumber_penerangan": {
+      "features": [
+        ["penerangan_tidak_layak"]
+      ]
+    },
+
+    "bahan_bakar_masak": {
+      "features": [
+        ["bahan_bakar_tidak_layak"]
+      ]
+    },
+
+    "kepemilikan_aset": {
+      "features": [
+        ["rumah_bukan_milik_sendiri"],
+        ["tidak_punya_kulkas"],
+        ["tidak_punya_motor"],
+        ["tidak_punya_smartphone"]
+      ]
+    }
+
+  }
+}

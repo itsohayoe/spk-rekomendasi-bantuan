@@ -1,0 +1,130 @@
+{
+
+  "weighting": {
+    "method": "ahp"
+  },
+
+  "programs": {
+    "PIP": {
+      "dimensi": ["education"],
+      "indicators": [
+        {
+          "nama": "partisipasi_sekolah"
+        },
+        {
+          "nama": "lama_sekolah",
+          "syarat": {
+            "ada_anak_sekolah": 1
+          }
+        }
+      ]
+    },
+
+    "PKH": {
+      "dimensi": ["education", "health"],
+      "indicators": [
+        {
+          "nama": "partisipasi_sekolah"
+        },
+        {
+          "nama": "lama_sekolah",
+          "syarat": {
+            "ada_anak_sekolah": 1
+          }
+        },
+        {
+          "nama": "morbiditas"
+        },
+        {
+          "nama": "nutrisi_balita"
+        }
+      ]
+    },
+
+    "PBI JK": {
+      "dimensi": ["health"],
+      "indicators": [
+        {
+          "nama": "morbiditas"
+        },
+        {
+          "nama": "nutrisi_balita"
+        }
+      ]
+    },
+
+    "ATENSI": {
+      "dimensi": ["health"],
+      "indicators": [
+        {
+          "nama": "morbiditas"
+        },
+        {
+          "nama": "nutrisi_balita"
+
+        }
+      ]
+    },
+
+    "BLT": {
+      "dimensi": ["health", "economy"],
+      "indicators": [
+        {
+          "nama": "morbiditas"
+        },
+        {
+          "nama": "nutrisi_balita"
+        },
+        {
+          "nama": "sumber_penerangan"
+        },
+        {
+          "nama": "bahan_bakar_masak"
+        },
+        {
+          "nama": "kepemilikan_aset" 
+        }
+      ]
+    },
+
+    "SEMBAKO": {
+      "dimensi": ["economy"],
+      "indicators": [
+        {
+          "nama": "sumber_penerangan"
+        },
+        {
+          "nama": "bahan_bakar_masak"
+        },
+        {
+          "nama": "kepemilikan_aset"
+        }
+      ]
+    },
+
+    "BSPS": {
+      "dimensi": ["housing"],
+      "syarat_program": {
+        "rumah_bukan_milik_sendiri": 0
+      },
+      "indicators": [
+        {
+          "nama": "kepadatan_hunian"
+        },
+        {
+          "nama": "kondisi_hunian"
+        },
+        {
+          "nama": "air_minum"
+        },
+        {
+          "nama": "sanitasi"
+        }
+      ]
+    }
+  },
+
+  "prioritas": {
+    "k": 5
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "variables": {
+
+    "umur": {
+      "column": "umur",
+      "balita": {"lte":4},
+      "lansia": {"gte":60}
+    },
+
+    "gizi": {
+      "column": "kondisi_gizi",
+      "buruk": [1,2]
+    },
+
+    "penyakit": {
+      "column": "penyakit_kronis",
+      "kronis": {"not_in": [1]}
+    },
+
+    "disabilitas": {
+
+      "penglihatan": {
+        "column": "penglihatan",
+        "kesulitan": [1,2]
+      },
+
+      "pendengaran": {
+        "column": "pendengaran",
+        "kesulitan": [1,2]
+      },
+
+      "berjalan": {
+        "column": "berjalan_atau_naik_tangga",
+        "kesulitan": [1,2]
+      },
+
+      "tangan": {
+        "column": "menggunakan_tangan_jari",
+        "kesulitan": [1,2]
+      },
+
+      "intelektual": {
+        "column": "belajar_kemampuan_intelektual",
+        "kesulitan": [1,2]
+      },
+
+      "perilaku": {
+        "column": "pengendalian_perilaku",
+        "kesulitan": [1,2]
+      },
+
+      "komunikasi": {
+        "column": "berbicara_komunikasi",
+        "kesulitan": [1,2]
+      },
+
+      "mengurus_diri": {
+        "column": "mengurus_diri",
+        "kesulitan": [1,2]
+      },
+
+      "mengingat": {
+        "column": "mengingat_berkonsentrasi",
+        "kesulitan": [1,2]
+      }
+
+    }
+
+  },
+
+  "features": {
+
+    "ada_balita": {
+      "conditions": [
+        ["umur.balita"]
+      ]
+    },
+
+    "ada_lansia": {
+      "conditions": [
+        ["umur.lansia"]
+      ]
+    },
+
+    "balita_gizi_buruk": {
+      "conditions": [
+        [["umur.balita"], ["gizi.buruk"]]
+      ]
+    },
+
+    "penyakit_kronis": {
+      "conditions": [
+        ["penyakit.kronis"]
+      ]
+    },
+
+    "gangguan_fungsional": {
+      "conditions": [
+        ["disabilitas.penglihatan.kesulitan"],
+        ["disabilitas.pendengaran.kesulitan"],
+        ["disabilitas.berjalan.kesulitan"],
+        ["disabilitas.tangan.kesulitan"],
+        ["disabilitas.intelektual.kesulitan"],
+        ["disabilitas.perilaku.kesulitan"],
+        ["disabilitas.komunikasi.kesulitan"],
+        ["disabilitas.mengurus_diri.kesulitan"],
+        ["disabilitas.mengingat.kesulitan"]
+      ]
+    }
+
+  }
+}
